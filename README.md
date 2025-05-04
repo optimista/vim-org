@@ -91,9 +91,9 @@ More content with a [[link/to/folder]] that will open folder/index.
 ## Sub-item
 ### Sub-sub-item
 
-=================
+=======================
 % Alternative Section %
-=================
+=======================
 
 This section is at the same level as "Main Topic" but represents 
 a different category or meta information.
