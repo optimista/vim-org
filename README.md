@@ -1,6 +1,6 @@
 # vim-org
 
-A lightweight Vim plugin inspired by vimwiki for note-taking and organizing with syntax highlighting, providing simple navigation between linked files within any directory which path contains `/org/` folder. 
+A lightweight Vim plugin inspired by vimwiki for note-taking and organizing with syntax highlighting (optimized for the onehalflight colorscheme), providing simple navigation between linked files within any directory which path contains `/org/` folder.
 
 ## Features
 
@@ -10,11 +10,12 @@ A lightweight Vim plugin inspired by vimwiki for note-taking and organizing with
   - Files are automatically saved when navigating
   - Directory links (e.g., `[[folder/folder]]`) automatically resolve to `folder/folder/index`
 
-- **Automatic Org Filetype Detection**: Files without extensions in directories containing "org" are automatically detected as Org files
+- **Path-Specific Activation**: Only activates in directories containing "/org/" in their path
+  - Files without extensions in these directories are automatically detected as Org files
 
 - **Clean Visualization**: Links are displayed with concealed brackets and underlined for better readability
 
-- **Rich Syntax Highlighting**: Support for various heading styles:
+- **Rich Syntax Highlighting**: Support for various heading styles (optimized for the onehalflight colorscheme):
 
   ```
   ===============
@@ -68,7 +69,7 @@ Then run `:PluginInstall`
 
 ## Usage
 
-1. Create files without extensions in a directory containing "org" in its path
+1. Create files without extensions in a directory that has "/org/" in its path
 2. Add wiki-style links using the `[[path/to/file]]` syntax 
 3. Navigate to links by positioning your cursor on a link and pressing `Enter`
 4. Return to the previous file by pressing `Backspace`
@@ -104,6 +105,8 @@ By default, the plugin has reasonable settings that work out of the box. However
 
 - Link concealment behavior by changing Vim's conceallevel setting in your vimrc
 - Highlighting colors by modifying your colorscheme
+
+**Note**: The syntax highlighting is specifically designed for the onehalflight colorscheme. If you use a different colorscheme, you may need to adjust the highlight definitions in the syntax file.
 
 ## License
 
