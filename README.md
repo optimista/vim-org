@@ -1,6 +1,6 @@
 # vim-org
 
-A lightweight Vim plugin for Org-style wiki links with syntax highlighting, providing simple navigation between linked files within your Org directories.
+A lightweight Vim plugin inspired by vimwiki for note-taking and organizing with syntax highlighting, providing simple navigation between linked files within any directory which path contains `/org/` folder. 
 
 ## Features
 
@@ -29,9 +29,9 @@ A lightweight Vim plugin for Org-style wiki links with syntax highlighting, prov
   ## SECONDARY ITEM (SUBITEM)
   ### TERCIARY ITEM (SUBSUBITEM)
 
-  =========================
+  ===========================
   % SUPER ALTERNATIVE TITLE %
-  =========================
+  ===========================
   
   % ALTERNATIVE TITLE %
   %% ALTERNATIVE SUBTITLE %%
@@ -43,7 +43,7 @@ A lightweight Vim plugin for Org-style wiki links with syntax highlighting, prov
 
 ```bash
 mkdir -p ~/.vim/pack/plugins/start
-git clone https://github.com/yourusername/vim-org.git ~/.vim/pack/plugins/start/vim-org
+git clone https://github.com/optimista/vim-org.git ~/.vim/pack/plugins/start/vim-org
 ```
 
 ### Using vim-plug
@@ -51,7 +51,7 @@ git clone https://github.com/yourusername/vim-org.git ~/.vim/pack/plugins/start/
 Add to your `.vimrc`:
 
 ```vim
-Plug 'yourusername/vim-org'
+Plug 'optimista/vim-org'
 ```
 
 Then run `:PlugInstall`
@@ -61,7 +61,7 @@ Then run `:PlugInstall`
 Add to your `.vimrc`:
 
 ```vim
-Plugin 'yourusername/vim-org'
+Plugin 'optimista/vim-org'
 ```
 
 Then run `:PluginInstall`
