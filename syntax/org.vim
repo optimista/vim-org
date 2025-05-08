@@ -22,7 +22,7 @@ let s:green       = { "gui": "#50a14f", "cterm": "71" }
 
 " Create lighter versions of colors
 let s:lighter_cyan = { "gui": "#4fb3c9", "cterm": "74" }
-let s:lightest_cyan = { "gui": "#96D2E6", "cterm": "153" }
+let s:lightest_cyan = { "gui": "#87C2DA", "cterm": "153" }
 let s:lighter_red = { "gui": "#ea7c72", "cterm": "173" }
 let s:lightest_red = { "gui": "#f0a39b", "cterm": "174" }
 
@@ -41,6 +41,7 @@ syntax match customDiffHeading2 /^%% .\+$/
 
 " Tertiary title
 syntax match customHeading3 /^=== .\+ ===$/
+syntax match customHeading4 /^==== .\+ ====$/
 
 " Markdown-style headings - match just the # at the start
 syntax match customHeadingHash1 /^#\ze .\+$/
@@ -70,6 +71,7 @@ function! s:hi_custom_headings()
     
     " Title 3 - lighter cyan + no bold
     exec "hi customHeading3 guifg=" . s:lighter_cyan.gui . " ctermfg=" . s:lighter_cyan.cterm . " gui=NONE cterm=NONE"
+    exec "hi customHeading4 guifg=" . s:lightest_cyan.gui . " ctermfg=" . s:lightest_cyan.cterm . " gui=NONE cterm=NONE"
     
     " Subtitles - only color the # symbols
     exec "hi customHeadingHash1 guifg=" . s:red.gui . " ctermfg=" . s:red.cterm . " gui=NONE cterm=NONE"
